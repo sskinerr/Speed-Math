@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+			<link rel="stylesheet" href="style.css">
+			<meta name="viewport"content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<div id="bodyDark"></div>
+<body id="body">
+<div id="bodyBlack"></div>
+<div id="all" class="body_hide">
+<div id="top">
+<div id="scoreTop">your record:
+<b id="recordTop">0</b></div>
+<div id="backButton"onclick="redirect()">home
+</div><span id="levelTop">example</span></div>
+<script src="../settings.js"></script>
+				
+<div id="gameOver">
+<p id="gameOverText">Game over!</p>
+<p id="gameOverScore">Your score: <b id="scoreText"></b></p>
+<img src="reload.png" id="reloadImg" alt="" onclick="gameReload()">
+</div>
+
+<body onload="math()" id="body">	
+    <div id="contScoreText">
+<div id="score">your score: <b id="scoreUser">0</b></div>
+	
+<div id="text"><b id="text1">15</b><b id="text2">+</b><b id="text3">15</b><b id="text4">+</b><b id="text5">15</b><b id="text6">+</b><b id="text7">15</b>=<input id="input">
+
+
+
+<div id="timerAnimation"></div></div></div>
+<!-- keyboard -->
+<table id="keywordOf">
+<tr><td id="keyText">keyword</td>
+<td id="keyOn"><div id="container">
+<input type="checkbox" onclick="keyBoardOFF()">
+</div></td></tr></table>
+<table id="keyword">
+<tr><td id="k1" class="keyword" onclick="keyM()">-
+</td><td id="k2" class="keyword" onclick="key0()">0
+</td><td id="k3" class="keyword" onclick="keyB()"><
+</td></tr><tr>
+<td class="keyword" onclick="key1()">1
+</td><td class="keyword" onclick="key2()">2
+</td><td class="keyword" onclick="key3()">3
+</td></tr>
+<tr><td class="keyword" onclick="key4()">4
+</td><td class="keyword" onclick="key5()">5
+</td><td class="keyword" onclick="key6()">6
+</td></tr><tr>
+<td class="keyword" onclick="key7()">7
+</td><td class="keyword" onclick="key8()">8
+</td><td class="keyword" onclick="key9()">9
+</td></tr></table>
+<script src="keyboard.js"></script>
+<script src="example.js"></script>
+</body>
+</html>

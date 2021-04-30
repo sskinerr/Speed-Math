@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta name="viewport"content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<style>
+@font-face{font-family:shrif; src:url(3.ttf);}
+*{-webkit-tap-highlight-color:rgba(255,255,255,0);-webkit-tap-highlight-color:transparent; padding:0}
+
+body{
+width:100%;
+opacity:1;
+transition:0.5s;
+height:100%;
+padding:0;
+margin:0;
+background: linear-gradient(45deg,#000000,#2b2b2b);}
+
+#dark{
+position:fixed;
+transition:0.6s;
+background: black;
+width:100%;
+height:100%;
+opacity:1;
+z-index:5000;}
+
+#a1{
+font-family:shrif;
+font-weight:696;
+padding-top:10px;
+padding-bottom:10px;
+margin-top:0;
+width:100%;
+text-align: center;
+font-size:30px;
+color: black;
+background: white;}
+
+.text{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width:100%;
+max-width:400px;
+color: white;
+font-size:20px;
+font-family:shrif;
+text-align: center;}
+
+#b1{
+margin-top:-70px;
+width:100%;
+max-width:460px;
+display: block;
+margin-left: auto;
+margin-right: auto;}
+
+hr{
+border:none;
+border-top:4px solid white;
+border-radius:20px;
+margin-top:-60px;}
+
+#b2{
+margin-top:12px;
+border-radius:7px;
+width:100%;
+max-width:400px;
+display: block;
+margin-left: auto;
+margin-right: auto;}
+
+#b3{
+width:100%;
+max-width:500px;
+border-radius:10px;
+display: block;
+margin-left: auto;
+margin-right: auto;}
+
+#a5{margin-top:15px;}
+
+#feedBack{
+background:linear-gradient(45deg,white,#d4d4d4);
+font-size:28px;
+color: black;
+font-family:shrif;
+font-weight:696;
+width:100%;
+max-width:250px;
+padding-bottom:6px;
+padding-top:6px;
+text-align:center;
+border-radius:5px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+transition:0.15s;}
+
+#feedBack:active{
+box-shadow: inset 13px 13px 31px #7b7b7b,
+            inset -13px -13px 31px #ffffff;}
+            
+#imgContact{
+transition:0.4s;
+z-index:-2;
+opacity:0;
+position:fixed;
+bottom:50%;
+margin-left:-50%;
+transform:translate(62.5%,55%);
+border:2px solid black;
+border-radius: 7px;
+width:346px;
+position:fixed;
+height: 300px;
+background: white;}
+
+.imgCont{
+height:120px;
+transition: 0.15s;
+margin-top:150px;
+border-radius:50%;
+width:120px;}
+.imgCont:active{transform:scale(0.9);}
+#inst{float: right;}
+
+#telegram{
+height:120px;
+transition: 0.15s;
+margin-top:181px;
+position:absolute;
+left:50%;
+transform:translateY(-50%);
+width:120px;
+margin-left:-58px;}
+#telegram:active{
+margin-top:35%;
+transform:scale(0.9);}
+
+#hr{
+margin-top:-25px;
+border:none;
+border-top:2px solid black;}
+ 
+#closeContact{
+margin-top:-3px;
+font-size:140%;
+transition: 0.15s;
+font-family:shrif;
+font-weight:696;
+width:100%;
+border-radius:0 0 5px 5px;
+text-align:center;}
+
+#closeContact:active{transform:scale(0.9);}
+table{
+position: absolute;
+top:46.7%;
+margin-left: 50%;
+transform:translate(-50%,-50%);
+width: 100%;}
+</style>
+</head>
+
+
+<body>
+<div id="dark"></div>
+
+<script>
+
+setTimeout('document.getElementById("dark").style.opacity = "0";document.getElementById("dark").style.zIndex = "-2"',300)
+
+
+function contDev(){
+document.getElementById('imgContact').style.opacity = "1";
+document.getElementById('imgContact').style.zIndex= "2000"}
+
+function closeContact(){
+document.getElementById('imgContact').style.opacity = "0";
+document.getElementById('imgContact').style.zIndex= "-1"}
+
+function home(){
+document.getElementById('imgContact').style.opacity = "0";
+document.getElementById('imgContact').style.zIndex= "-1";
+document.getElementById("dark").style.zIndex = "2000";
+document.getElementById("dark").style.opacity = "1";
+setTimeout("window.location = 'index.html'",400);}
+</script>
+				
+<p id="a1">How to play</p>
+
+
+<div id="imgContact">				
+<table style="position:static"><tr>
+<td><a href="https://instagram.com/sskine.r?igshid=dl41zugcse8a">
+<img src="image/inst.jpg" alt="" 
+class="imgCont" id="inst">
+</a></td>
+<td><a href="mailto: zaletaroman00@gmail.com">
+<img src="image/gmail.png"alt=""
+class="imgCont" id="gmail">
+</a></td>
+<a href="https://t.me/SSkNR">
+<img src="image/tg.png" alt="" id="telegram"></a></tr></table>
+<hr id="hr">
+<p id="closeContact" 
+onclick="closeContact()">Close</p>
+</div>
+
+
+
+<p id="a2" class="text">the essence of the game is to train your speed skills in mathematics, as well as learn to think and count faster</p>
+
+<p id="a3" class="text">first, click on the 'play' button and select the level you want</p>
+<img src="image/b1.png" alt="" id="b1">
+<hr>
+
+<img src="image/b2.png" alt="" id="b2">
+<hr style="margin-top:20px;">
+
+<p id="a4" class="text">if desired, you can disable the built-in keyboard and enable your own.  to do this, click on the keyboard switch and then on the text field where the answer should be</p>
+<img src="image/b3.png" alt="" id="b3">
+<hr style="margin-top:15px;">
+
+<p id="a5" class="text">if you want to know more information or have encountered a problem in the app then contact me please via one of my contacts</p>
+
+<p id="feedBack" onclick="contDev()">Feedback</p>
+<p id="feedBack" onclick="home()">back to home</p>
+</body>
+</html>

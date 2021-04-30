@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<script src="settings.js"></script>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport"content="width=device-width, initial-scale=1",user-scalable="no">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+<div id="intro">
+				
+<div id="cont"><img src="image/y.svg"alt=""id="y"style="float: right;
+"><div id="logoSS"><b id="left"><</b><b id="ss">SS</b><b id="k">k</b><b id="nr">NR</b><b id="right">></b></div><img src="image/b.svg"id="b"alt=""></div>				
+</div>
+
+<div id="bodyDark" class="body_hide"></div>
+<div id="bodyOrange" class="body_hide"></div>
+<div id="bodyBlack"></div>
+
+<body id="body">
+
+<div id="all">
+<img src="image/logo.png" alt="" id="logo">
+<div id="settings">
+<div id="boxSett">
+<table>
+
+<table><tr>
+<b id="sound">sound<input id="soundSett" type="checkbox" class="musikSound" onclick="soundSett()"></b>
+</tr></table>    
+    
+<table><tr>
+<b id="darkMode">dark mode<input class="dModeJs" id="dMode" type="checkbox" onclick="dMode()"></b>
+</tr></table>
+
+</div>
+<b id="closeSett"
+onclick="closeSett()">close</b>
+</div>
+
+<!--  -->
+<div id="imgContact">				
+<table style="position:static"><tr>
+<td><a href="https://instagram.com/sskine.r?igshid=dl41zugcse8a">
+<img src="image/inst.jpg" alt="" 
+class="imgCont" id="inst">
+</a></td>
+<td><a href="mailto: zaletaroman00@gmail.com">
+<img src="image/gmail.png"alt=""
+class="imgCont" id="gmail">
+</a></td>
+<a href="https://t.me/SSkNR">
+<img src="image/tg.png" alt="" id="telegram"></a></tr></table>
+<hr id="hr">
+<p id="closeContact" 
+onclick="closeContact()">Close</p>
+</div>
+
+
+<div id="recordcontainer">
+<table  id="resultUser">
+<tr><td id="myRecordText">My records</td></tr>
+<tr><td>Add:
+</td><td><b id="addRes">0</b></td></tr>
+<tr><td>Subtraction:
+</td><td><b id="subRes">0</b></td></tr>
+<tr><td>Add and Subtraction:
+</td><td><b id="adSubRes">0</b></tr>
+<tr><td>Multiplication:
+</td><td><b id="multRes">0</b></td></tr>
+<tr><td>Divsion:
+</td><td><b id="divRes">0</b></td></tr>
+<tr><td>Multiplication and Divsion:</td>
+<td><b id="mDRes">0</b></td></tr>
+<tr><td>Root:
+</td><td><b id="rootRes">0</b></td></tr>
+<tr><td>Example:
+</td><td><b id="exRes">0</b></td></tr>
+<tr><td>Degree:
+</td><td><b id="degreeRes">0</b></td></tr>
+<tr><td>Equality:
+</td><td><b id="equalityRes">0</b></td></tr>
+<tr><td>Hard add and subtraction:
+</td><td><b id="adHRes">0</b></td></tr>
+<tr><td>Hard multiplication and division:
+</td><td><b id="mdHRes">0</b></td></tr>
+<tr><td>Hard root:
+</td><td><b id="hRRes">0</b></td></tr>
+<tr><td>Hard degree:
+</td><td><b id="hDRes">0</b></td></tr>
+<tr><td>Randome:
+</td><td><b id="rndRes">0</b></td></tr>
+<tr><td>Hard example:
+</td><td><b id="hERes">0</b></td></tr>
+<tr><td>Hard equality:
+</td><td><b id="hEqRes">0</b></td></tr>
+<tr><td id="closeRecordText" onclick="closeRec()">
+<span id="span">close</span></td></tr>
+</table>
+</div>
+
+
+<div id="addContainer">
+<p id="contact"
+onclick="contDev()">contact developers</p>
+<p id="contact" class="rate">rate the game</p>
+<p id="contact" class="rate" onclick="record()">my results</p>
+</div>
+
+<div id="abik">
+<div id="box">
+<p id="addInform" onclick="addInfo()">Additional Information</p>
+<p id="howText"onclick="howP()">How to play?</p>
+<p id="setText" onclick="settings()">settings</p>
+<p id="playText" onclick="play()">Play</p>
+</div></div>
+
+
+<div id="selestLevel">
+<p id="selestText">select a level</p>
+<div id="boxLevel">
+<table id="levels">
+<tr>
+<td><img class="imgL"  onclick="redirectAdd()"
+src="image/add.png" alt=""></td> 
+<td><img class="imgL"  onclick="redirectSub()"
+        src="image/sub.png" alt=""></td>
+       <td><img class="imgL"  
+       onclick="redirectAddsub()"
+        src="image/addsub.png" alt=""></td>
+         </tr>
+         <tr id="tr2">
+        <td> <img class="imgL"  
+         onclick="multiplication()"
+        src="image/mult.png" alt=""></td> 
+        <td><img class="imgL"  
+         onclick="division()"
+        src="image/div.png" alt=""></td>
+        <td><img class="imgL"  onclick="multDiv()"
+        src="image/multdiv.png" alt=""></td>
+         </tr> 
+         <tr id="tr3">
+        <td> <img class="imgL"  onclick="root()"
+        src="image/root.png" alt=""></td> 
+        <td><img class="imgL"  onclick="example()"
+        src="image/example.png" alt=""></td>
+        <td><img class="imgL"  onclick="degree()"
+        src="image/degree.png" alt=""></td>
+         </tr> 
+        <p id="nextlevel" 
+        onclick="nextLevel()">next levels</p>
+        </table>
+
+       <table id="levels2">         
+							<tr>						  				
+       <td><img class="imgL"  
+        onclick="redirectX()"
+							src="image/redirectX.png" alt=""></td>
+							<td><img
+							class="imgL" onclick="ASHard()"
+							src="image/addSubHard.png" alt=""></td>   
+							<td><img onclick="MDHard()"
+				   src="image/multDivHard.png"
+							class="imgL" alt=""></td>
+						 </tr><tr>
+						 	<td><img onclick="sqrtHard()"
+						 	src="image/sqrtHard.png"
+						 	class="imgL" alt=""></td>
+						 	<td><img src="image/aboba.png"
+						 	class="imgL" alt=""></td>
+						 	<td><img
+						 	src="image/hDeg.png" class="imgL"
+						 alt=""></td>
+						 </tr><tr>
+						 	<td><img class="imgL" 
+						 	onclick="random()"
+						 	src="image/random.png"
+						 alt="" id="hardImg"></td><td>
+						 	<img class="imgL" onclick="exampleHard()"
+						 	src="image/hardExample.png"
+						 alt="" id="hardImg"></img></td>
+						 <td><img class="imgL" 
+						 onclick="eqHard()"
+						 	src="image/hardEq.png"
+						 alt="" id="hardImg"></td></tr>						 
+	
+        <p id="prew"
+       onclick="prew()">prew levels</p>        
+         </table>
+         </div>         
+        <p onclick="closeLevel()" 
+        id="closeLevel">close</p>
+  				   </div></div>
+<script src="script.js"></script>
+<script>dModeSave();musicSave();soundSave()</script>
+</body>
+</html>
